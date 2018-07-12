@@ -1,54 +1,104 @@
 /*
-Your MyArrayList class should have the following methods:
-1. A constructor that creates an array with some default size.
-2 A parameterized constructor that allows users to specify how large the initial array should be.
-3. add(int val) - adds the value to the end of the list
-4. add(int val, int index) - adds the value at the index, shifting all other elements to make room.
-5. removeValue(int val) - searches for the first occurence of the value in the array, removes it, and shifts everything so there's no gaps left.
-6. removeAtIndex(int index) - Removes the value at the index and shifts everything else to leave no gaps.
-7. size() - returns the number of elements in the array.
-8. get(int index) - returns the value of the element at the index in the array.
-
 The array and the size variable (not the size() method!) should be private. Users are only allowed to interact with the class via the public methods. This guarantees that no one can break the list and get it into weird states.
  */
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class MyArrayList {
 
     private int DEFAULT_SIZE = 10;
 
-    private int[] data;
-    private int elements;
+    private int[] data; //array name
+    private int elements; //elements in the array?
+    private int size; //size of array
 
+
+    // 01. A constructor that creates an array with some default size.
     public MyArrayList() {
         this.data = new int[DEFAULT_SIZE];
         this.elements = 0;
     }
 
+    // 02. A parameterized constructor that allows users to specify how large the initial array should be.
     public MyArrayList(int size) {
-        this.data = new int[size];
+        this.size = size;
+        this.data = new int[this.size];
         this.elements = 0;
     }
 
-    // adds a value to the end of the list
-    public int add(int value) {
+    // 03. adds the value to the end of the list
+    public void add(int value) {
+//        System.out.println(this.elements);
+
         this.data[this.elements] = value;
         this.elements++;
-        return this.data[this.elements];
+        System.out.println(Arrays.toString(this.data));
+//        System.out.println(this.elements);
     }
 
-    //finds the size of the custom array
+     // 04. adds the value at the index, shifting all other elements to make room.
+    public Boolean add(int value, int index) {
+//        System.out.println("Index 2: " + this.data[2]);
+
+        //check if array has room to shift things
+        if(this.elements == this.size) {
+            System.out.println("Sorry, dude. No room.");
+            return false;
+        }
+
+        if (index < this.elements) {
+        int spaceToBeMoved = this.elements - index;
+            System.out.println("steps to shift: " + spaceToBeMoved);
+
+            for (int i = spaceToBeMoved; i > 0; i--) {
+            this.data[index + i] = this.data[index + i-1];
+//            System.out.println(this.data[index + i-1]);
+//            System.out.println(this.data[index + i]);
+//            System.out.println(Arrays.toString(this.data));
+
+            }
+        this.data[index] = value;
+            System.out.println(Arrays.toString(this.data));
+
+
+
+        } else {
+            //adding in an empty space
+            add(value);
+        }
+
+        //This part will just insert a specific value at a specific index
+//        System.out.println(Arrays.toString(this.data));
+//        System.out.println(this.elements);
+
+
+        return true;
+    }
+//
+//    // 05. searches for the first occurrence of the value in the array, removes it, and shifts everything so there's no gaps left.
+//    removeValue(int val) {
+//
+//    }
+//
+//    // 06. Removes the value at the index and shifts everything else to leave no gaps.
+//    removeAtIndex(int index) {
+//
+//    }
+
+    // 07. returns the number of elements in the array.
     public int size() {
         int count = 0;
 
-        for(int i = 0; i < this.data[this.elements]; i++){
+        for(int i = 0; i < this.data.length; i++){
             count++;
         }
-//        int n = this.elements;
         return  count;
     }
 
-
-
-
+//    // 08. returns the value of the element at the index in the array.
+//    get(int index) {
+//
+//    }
 
 }
