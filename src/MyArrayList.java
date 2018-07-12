@@ -31,7 +31,7 @@ public class MyArrayList {
     public void add(int value) {
         this.data[this.elements] = value;
         this.elements++;
-        System.out.println(Arrays.toString(this.data));
+//        System.out.println(Arrays.toString(this.data));
     }
 
      // 04. adds the value at the index, shifting all other elements to make room.
@@ -71,25 +71,32 @@ public class MyArrayList {
         }
         for (int i = locationOfValue; i < this.elements-1; i++) {
             this.data[i] = this.data[i+1];
-            System.out.println(Arrays.toString(this.data));
+//            System.out.println(Arrays.toString(this.data));
         }
         this.elements--;
-        System.out.println(this.elements);
+//        System.out.println(this.elements);
 
     }
 
-    // 06. Removes the value at the index and shifts everything else to leave no gaps.
-//    removeAtIndex(int index) {
-//
-//    }
+//     06. Removes the value at the index and shifts everything else to leave no gaps.
+    public void removeAtIndex(int index) {
+        System.out.println(Arrays.toString(this.data));
+        System.out.println(size());
+
+
+        for (int i = index; i < this.elements-1; i++) {
+            this.data[i] = this.data[i+1];
+//            System.out.println(Arrays.toString(this.data));
+        }
+        this.elements--;
+        System.out.println(Arrays.toString(this.data));
+        System.out.println(size());
+    }
 
     // 07. returns the number of elements in the array.
     public int size() {
-        int count = 0;
-
-        for(int i = 0; i < this.data.length; i++){
-            count++;
-        }
+        int count = this.elements;
+//        System.out.println(count);
         return  count;
     }
 

@@ -44,7 +44,7 @@ public class TryingOutMyArrayList {
 
         bb.get(3);
 
-        bb.removeValue(19);
+        bb.removeAtIndex(2);
 //        bb.add(45, 8);
 //        System.out.println("After using the .add method (3): --> " + aa.size());
 //        System.out.println("After using the .add method (3): --> " + bb.size());
