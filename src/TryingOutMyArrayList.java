@@ -30,7 +30,7 @@ public class TryingOutMyArrayList {
 
         bb.add(8);
         bb.add(19);
-        bb.add(2);
+        bb.add(19);
         bb.add(3);
 
 
@@ -43,6 +43,8 @@ public class TryingOutMyArrayList {
         bb.add(99);
 
         bb.get(3);
+
+        bb.removeValue(19);
 //        bb.add(45, 8);
 //        System.out.println("After using the .add method (3): --> " + aa.size());
 //        System.out.println("After using the .add method (3): --> " + bb.size());

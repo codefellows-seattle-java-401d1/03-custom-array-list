@@ -60,10 +60,23 @@ public class MyArrayList {
         }
     }
 
-    // 05. searches for the first occurrence of the value in the array, removes it, and shifts everything so there's no gaps left.
-//    public removeValue(int val) {
-//
-//    }
+//     05. searches for the first occurrence of the value in the array, removes it, and shifts everything so there's no gaps left.
+    public void removeValue(int value) {
+        int locationOfValue = 0;
+        for (int i = 0; i < this.data.length; i++) {
+            if (value == this.data[i]) {
+                locationOfValue = i;
+                break;
+            }
+        }
+        for (int i = locationOfValue; i < this.elements-1; i++) {
+            this.data[i] = this.data[i+1];
+            System.out.println(Arrays.toString(this.data));
+        }
+        this.elements--;
+        System.out.println(this.elements);
+
+    }
 
     // 06. Removes the value at the index and shifts everything else to leave no gaps.
 //    removeAtIndex(int index) {
