@@ -9,9 +9,10 @@ public class MyArrayList {
         this.elements = 0;
     }
 
-    // adds a value to the end of the list
     public void add(int value) {
         this.data[this.elements] = value;
         this.elements++;
     }
 }
+
+// still working on this
