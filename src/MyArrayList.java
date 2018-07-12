@@ -60,12 +60,12 @@ public class MyArrayList {
         }
     }
 
-//    // 05. searches for the first occurrence of the value in the array, removes it, and shifts everything so there's no gaps left.
-//    removeValue(int val) {
+    // 05. searches for the first occurrence of the value in the array, removes it, and shifts everything so there's no gaps left.
+//    public removeValue(int val) {
 //
 //    }
-//
-//    // 06. Removes the value at the index and shifts everything else to leave no gaps.
+
+    // 06. Removes the value at the index and shifts everything else to leave no gaps.
 //    removeAtIndex(int index) {
 //
 //    }
@@ -80,9 +80,11 @@ public class MyArrayList {
         return  count;
     }
 
-//    // 08. returns the value of the element at the index in the array.
-//    get(int index) {
-//
-//    }
+    // 08. returns the value of the element at the index in the array.
+    public int get(int index) {
 
+        int value = this.data[index];
+        System.out.println(value);
+        return value;
+    }
 }

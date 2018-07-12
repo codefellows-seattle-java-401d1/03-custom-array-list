@@ -41,6 +41,8 @@ public class TryingOutMyArrayList {
         bb.add(100, 0);
 
         bb.add(99);
+
+        bb.get(3);
 //        bb.add(45, 8);
 //        System.out.println("After using the .add method (3): --> " + aa.size());
 //        System.out.println("After using the .add method (3): --> " + bb.size());
