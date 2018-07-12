@@ -29,18 +29,13 @@ public class MyArrayList {
 
     // 03. adds the value to the end of the list
     public void add(int value) {
-//        System.out.println(this.elements);
-
         this.data[this.elements] = value;
         this.elements++;
         System.out.println(Arrays.toString(this.data));
-//        System.out.println(this.elements);
     }
 
      // 04. adds the value at the index, shifting all other elements to make room.
     public Boolean add(int value, int index) {
-//        System.out.println("Index 2: " + this.data[2]);
-
         //check if array has room to shift things
         if(this.elements == this.size) {
             System.out.println("Sorry, dude. No room.");
@@ -48,34 +43,23 @@ public class MyArrayList {
         }
 
         if (index < this.elements) {
-        int spaceToBeMoved = this.elements - index;
-            System.out.println("steps to shift: " + spaceToBeMoved);
+            int spaceToBeMoved = this.elements - index;
 
             for (int i = spaceToBeMoved; i > 0; i--) {
-            this.data[index + i] = this.data[index + i-1];
-//            System.out.println(this.data[index + i-1]);
-//            System.out.println(this.data[index + i]);
-//            System.out.println(Arrays.toString(this.data));
-
+                this.data[index + i] = this.data[index + i-1];
             }
-        this.data[index] = value;
-            System.out.println(Arrays.toString(this.data));
 
-
+            this.data[index] = value;
+            this.elements++;
+            return true;
 
         } else {
-            //adding in an empty space
+            //adding a value declared by user to an empty index
             add(value);
+            return true;
         }
-
-        //This part will just insert a specific value at a specific index
-//        System.out.println(Arrays.toString(this.data));
-//        System.out.println(this.elements);
-
-
-        return true;
     }
-//
+
 //    // 05. searches for the first occurrence of the value in the array, removes it, and shifts everything so there's no gaps left.
 //    removeValue(int val) {
 //
