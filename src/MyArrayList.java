@@ -2,7 +2,6 @@
 The array and the size variable (not the size() method!) should be private. Users are only allowed to interact with the class via the public methods. This guarantees that no one can break the list and get it into weird states.
  */
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MyArrayList {
