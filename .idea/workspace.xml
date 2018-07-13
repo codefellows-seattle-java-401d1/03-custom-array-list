@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05de5e2d-7be2-46f0-abc4-fee2884ac80a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-custom-array-list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/03-custom-array-list.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyArrayListTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="05de5e2d-7be2-46f0-abc4-fee2884ac80a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,14 +11,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40533188">
+    <splitter split-orientation="horizontal" split-proportion="0.4738443">
       <split-first>
         <leaf>
           <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MyArrayList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+                <state relative-caret-position="1080">
+                  <caret line="72" selection-start-line="72" selection-end-line="72" />
                 </state>
               </provider>
             </entry>
@@ -35,7 +30,7 @@
           <file leaf-file-name="MyArrayListTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MyArrayListTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
+                <state relative-caret-position="360">
                   <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -289,9 +284,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyArrayListTest_removeValue - 2018.07.13 at 10h 20m 57s.xml">
-      <configuration name="MyArrayListTest.removeValue" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyArrayListTest_removeValue - 2018.07.13 at 10h 27m 48s.xml">
       <configuration name="MyArrayListTest.removeValue" configurationId="JUnit" />
     </history-entry>
@@ -319,9 +311,12 @@
     <history-entry file="MyArrayListTest - 2018.07.13 at 10h 31m 53s.xml">
       <configuration name="MyArrayListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyArrayListTest - 2018.07.13 at 10h 35m 55s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1058" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -330,14 +325,14 @@
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5005208" side_tool="true" weight="0.27947155" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27947155" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.27947155" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.042708334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16428572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -405,14 +400,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="1080">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyArrayListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="360">
           <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
