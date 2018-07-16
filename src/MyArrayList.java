@@ -8,9 +8,9 @@ public class MyArrayList {
 
     private int DEFAULT_SIZE = 10;
 
-    private int[] data; //array name
-    private int elements; //elements in the array?
-    private int size; //size of array
+    private int[] data;
+    private int elements;
+    private int size;
 
 
     // 01. A constructor that creates an array with some default size.
@@ -27,17 +27,17 @@ public class MyArrayList {
     }
 
     // 03. adds the value to the end of the list
-    public void add(int value) {
+    public int[] add(int value) {
         this.data[this.elements] = value;
         this.elements++;
-//        System.out.println(Arrays.toString(this.data));
+        return this.data;
     }
 
      // 04. adds the value at the index, shifting all other elements to make room.
     public Boolean add(int value, int index) {
         //check if array has room to shift things
         if(this.elements == this.size) {
-            System.out.println("Sorry, dude. No room.");
+            System.out.println("Error. This array is full. Index " + index + " is unavailable.");
             return false;
         }
 
@@ -59,8 +59,9 @@ public class MyArrayList {
         }
     }
 
-//     05. searches for the first occurrence of the value in the array, removes it, and shifts everything so there's no gaps left.
-    public void removeValue(int value) {
+    // 05. searches for the first occurrence of the value in the array, removes it,
+    // and shifts everything so there's no gaps left.
+    public int[] removeValue(int value) {
         int locationOfValue = 0;
         for (int i = 0; i < this.data.length; i++) {
             if (value == this.data[i]) {
@@ -70,32 +71,28 @@ public class MyArrayList {
         }
         for (int i = locationOfValue; i < this.elements-1; i++) {
             this.data[i] = this.data[i+1];
-//            System.out.println(Arrays.toString(this.data));
         }
         this.elements--;
-//        System.out.println(this.elements);
-
+        return this.data;
     }
 
 //     06. Removes the value at the index and shifts everything else to leave no gaps.
-    public void removeAtIndex(int index) {
-        System.out.println(Arrays.toString(this.data));
-        System.out.println(size());
-
+    public int[] removeAtIndex(int index) {
 
         for (int i = index; i < this.elements-1; i++) {
             this.data[i] = this.data[i+1];
-//            System.out.println(Arrays.toString(this.data));
         }
-        this.elements--;
-        System.out.println(Arrays.toString(this.data));
-        System.out.println(size());
+        if (this.elements < index) {
+            System.out.println("Error. Index " + index + " does not exist.");
+        } else {
+            this.elements--;
+        }
+        return this.data;
     }
 
     // 07. returns the number of elements in the array.
     public int size() {
         int count = this.elements;
-//        System.out.println(count);
         return  count;
     }
 
@@ -103,7 +100,12 @@ public class MyArrayList {
     public int get(int index) {
 
         int value = this.data[index];
-        System.out.println(value);
-        return value;
+        if (this.elements < index) {
+            System.out.println("Error. Index " + index + " is unavailable.");
+            return -1;
+        } else {
+            System.out.println(value);
+            return value;
+        }
     }
 }
