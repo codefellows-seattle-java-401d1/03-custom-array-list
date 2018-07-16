@@ -93,7 +93,6 @@ public class MyArrayList {
     // 07. returns the number of elements in the array.
     public int size() {
         int count = this.elements;
-//        System.out.println(count);
         return  count;
     }
 
