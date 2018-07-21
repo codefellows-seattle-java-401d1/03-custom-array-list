@@ -29,9 +29,23 @@ public class MyArrayList {
     // adds a val at a specified index
     public int[] addAtIndex (int val, int index) {
         this.elements++;
+        int[] temp = new int[DEFAULT_SIZE];
+        System.out.println("Number of elements: " + elements);
 
-        this.data[index] = val;
-        return this.data;
+        if (this.elements >= DEFAULT_SIZE) {
+            temp = new int[DEFAULT_SIZE + 1];
+        }
+
+        for (int i = 0; i < index; i++) {
+            temp[i] = this.data[i];
+        }
+
+        for (int i = temp.length - 1; i > index; i--) {
+            temp[i] = this.data[i - 1];
+        }
+        temp[index] = val;
+
+        return temp;
     }
 
     public int[] removeValue (int val) {

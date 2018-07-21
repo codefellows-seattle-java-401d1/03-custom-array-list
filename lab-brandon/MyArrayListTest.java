@@ -38,6 +38,32 @@ class MyArrayListTest {
         assertEquals(expected, result);
     }
 
+    @org.junit.jupiter.api.Test
+    void addAtIndexFullList() {
+        System.out.println("---- Tests for the add() at index method ----");
+
+        MyArrayList arr = new MyArrayList();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        arr.add(5);
+        arr.add(6);
+        arr.add(7);
+        arr.add(8);
+        arr.add(9);
+        arr.add(10);
+
+        int val = 14;
+        int index = 2;
+
+        String result = Arrays.toString(arr.addAtIndex(val, index));
+        String expected = Arrays.toString(new int[] {1, 2, 14, 3, 4, 5, 6, 7, 8, 9, 10});
+        System.out.println("Expected: " + expected);
+        System.out.println("Result: " + result);
+        assertEquals(expected, result);
+    }
+
     // Tests for the remove value method
 
     @org.junit.jupiter.api.Test
