@@ -33,12 +33,11 @@ class MyArrayListTest {
         arr.add(7);
         arr.add(8);
         arr.add(9);
-        arr.add(10);
 
-        int val = 36;
+        int val = 10;
 
         String result = (Arrays.toString(arr.add(val)));
-        String expected = Arrays.toString(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 36});
+        String expected = Arrays.toString(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
         System.out.println("Expected: " + expected);
         System.out.println("Result: " + result);
 
@@ -292,11 +291,10 @@ class MyArrayListTest {
         System.out.println("---- Tests for the get() method ----");
 
         MyArrayList arr = new MyArrayList();
-        int val = 69;
-        arr.add(val);
+        arr.add(6);
 
         int result = arr.get(0);
-        int expected = 69;
+        int expected = 6;
         System.out.println("Expected: " + expected);
         System.out.println("Result: " + result);
 
@@ -307,7 +305,10 @@ class MyArrayListTest {
     void getAtIndex3() {
 
         MyArrayList arr = new MyArrayList();
-        arr.addAtIndex(12, 3);
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        System.out.println(Arrays.toString(arr.add(12)));
 
         int result = arr.get(3);
         int expected = 12;
@@ -316,4 +317,28 @@ class MyArrayListTest {
 
         assertEquals(expected, result) ;
     }
+
+    @org.junit.jupiter.api.Test
+    void getAtIndex9() {
+
+        MyArrayList arr = new MyArrayList();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        arr.add(5);
+        arr.add(6);
+        arr.add(7);
+        arr.add(8);
+        arr.add(9);
+        arr.add(12);
+        System.out.println(arr.get(9));
+        int result = arr.get(9);
+        int expected = 12;
+        System.out.println("Expected: " + expected);
+        System.out.println("Result: " + result);
+
+        assertEquals(expected, result) ;
+    }
+
 }

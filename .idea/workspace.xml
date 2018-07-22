@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3ef42dc-b700-4723-8423-151f038aacf7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lab-brandon/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-brandon/MyArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-brandon/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-brandon/MyArrayListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="MyArrayListTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab-brandon/MyArrayListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="211" column="85" selection-start-line="211" selection-start-column="85" selection-end-line="211" selection-end-column="85" />
+            <state relative-caret-position="304">
+              <caret line="339" selection-start-line="339" selection-end-line="339" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab-brandon/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab-brandon/MyArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+            <state relative-caret-position="-283">
+              <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
               <folding>
                 <element signature="e#1672#1673#0" expanded="true" />
                 <element signature="e#1708#1709#0" expanded="true" />
@@ -50,8 +58,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,8 +69,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lab-brandon/MyArrayListTest.java" />
         <option value="$PROJECT_DIR$/lab-brandon/MyArrayList.java" />
+        <option value="$PROJECT_DIR$/lab-brandon/MyArrayListTest.java" />
+        <option value="$PROJECT_DIR$/lab-brandon/Main.java" />
       </list>
     </option>
   </component>
@@ -132,17 +141,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest.removeAtIndexFullListIndex4">
+  <component name="RunManager" selected="JUnit.MyArrayListTest.getAtIndex9">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="03-custom-array-list" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="MyArrayListTest.removeAtIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="03-custom-array-list" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="removeAtIndex" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MyArrayListTest.getAtIndex0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="03-custom-array-list" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
+      <option name="METHOD_NAME" value="getAtIndex0" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -153,13 +184,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MyArrayListTest.removeAtIndexFullList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.getAtIndex3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="03-custom-array-list" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="removeAtIndexFullList" />
+      <option name="METHOD_NAME" value="getAtIndex3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -170,47 +201,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MyArrayListTest.removeAtIndexFullListIndex4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.getAtIndex9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="03-custom-array-list" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="removeAtIndexFullListIndex4" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MyArrayListTest.removeValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="03-custom-array-list" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="removeValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MyArrayListTest.removeValueAtEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="03-custom-array-list" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="removeValueAtEnd" />
+      <option name="METHOD_NAME" value="getAtIndex9" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -260,19 +257,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.MyArrayListTest.removeValue" />
-      <item itemvalue="JUnit.MyArrayListTest.removeValueAtEnd" />
-      <item itemvalue="JUnit.MyArrayListTest.removeAtIndex" />
-      <item itemvalue="JUnit.MyArrayListTest.removeAtIndexFullList" />
-      <item itemvalue="JUnit.MyArrayListTest.removeAtIndexFullListIndex4" />
+      <item itemvalue="JUnit.MyArrayListTest" />
+      <item itemvalue="JUnit.MyArrayListTest.getAtIndex3" />
+      <item itemvalue="JUnit.MyArrayListTest.getAtIndex0" />
+      <item itemvalue="JUnit.MyArrayListTest.getAtIndex9" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyArrayListTest.removeAtIndexFullListIndex4" />
-        <item itemvalue="JUnit.MyArrayListTest.removeAtIndexFullList" />
-        <item itemvalue="JUnit.MyArrayListTest.removeAtIndex" />
-        <item itemvalue="JUnit.MyArrayListTest.removeValueAtEnd" />
-        <item itemvalue="JUnit.MyArrayListTest.removeValue" />
+        <item itemvalue="JUnit.MyArrayListTest.getAtIndex9" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MyArrayListTest.getAtIndex0" />
+        <item itemvalue="JUnit.MyArrayListTest.getAtIndex3" />
+        <item itemvalue="JUnit.MyArrayListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -290,35 +287,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 16m 52s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex0 - 2018.07.21 at 18h 47m 21s.xml">
+      <configuration name="MyArrayListTest.getAtIndex0" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 20m 40s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex3 - 2018.07.21 at 18h 48m 29s.xml">
+      <configuration name="MyArrayListTest.getAtIndex3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 21m 10s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex0 - 2018.07.21 at 18h 48m 48s.xml">
+      <configuration name="MyArrayListTest.getAtIndex0" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 21m 28s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex9 - 2018.07.21 at 18h 49m 51s.xml">
+      <configuration name="MyArrayListTest.getAtIndex9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 21m 53s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex9 - 2018.07.21 at 18h 50m 44s.xml">
+      <configuration name="MyArrayListTest.getAtIndex9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 22m 07s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex9 - 2018.07.21 at 18h 51m 18s.xml">
+      <configuration name="MyArrayListTest.getAtIndex9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 22m 32s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex9 - 2018.07.21 at 18h 52m 04s.xml">
+      <configuration name="MyArrayListTest.getAtIndex9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 22m 54s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex9 - 2018.07.21 at 18h 52m 17s.xml">
+      <configuration name="MyArrayListTest.getAtIndex9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 23m 03s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex9 - 2018.07.21 at 18h 52m 27s.xml">
+      <configuration name="MyArrayListTest.getAtIndex9" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyArrayListTest_removeAtIndexFullList - 2018.07.21 at 18h 24m 24s.xml">
-      <configuration name="MyArrayListTest.removeAtIndexFullList" configurationId="JUnit" />
+    <history-entry file="MyArrayListTest_getAtIndex9 - 2018.07.21 at 18h 53m 42s.xml">
+      <configuration name="MyArrayListTest.getAtIndex9" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -333,10 +330,10 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31172413" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3075862" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32956383" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.106206894" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24965517" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1720517" />
@@ -360,7 +357,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -445,6 +442,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lab-brandon/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="e#1672#1673#0" expanded="true" />
+            <element signature="e#1708#1709#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -454,24 +464,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab-brandon/MyArrayListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="211" column="85" selection-start-line="211" selection-start-column="85" selection-end-line="211" selection-end-column="85" />
+        <state relative-caret-position="304">
+          <caret line="339" selection-start-line="339" selection-end-line="339" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-brandon/MyArrayList.java">
+    <entry file="file://$PROJECT_DIR$/lab-brandon/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
-          <folding>
-            <element signature="e#1672#1673#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1781#1782#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
