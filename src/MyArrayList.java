@@ -1,42 +1,42 @@
-public class ListArray {
+public class MyArrayList {
 
-    private int length;
+    private int size;
     private int[] content;
 
-    public ListArray(int length, int[] contents){
-        this.length = length;
-        this.content = new int[length];
-        for(int i = 0; i<length-1; i++){
+    public MyArrayList(int size, int[] contents){
+        this.size = size;
+        this.content = new int[size];
+        for(int i = 0; i< size -1; i++){
             this.content[i] = contents[i];
         }
-//        System.out.println("Array generated with both parameters: L: " + this.length + "  C:" + this.content[0]+"\n");
+//        System.out.println("Array generated with both parameters: L: " + this.size + "  C:" + this.content[0]+"\n");
     }
 
-    public ListArray(int length){
-        this.length = length;
-        this.content = new int[length];
-//        System.out.println("Array generated with one length parameter: L: " + this.length + "  C:" + this.content[0]+"\n");
+    public MyArrayList(int size){
+        this.size = size;
+        this.content = new int[size];
+//        System.out.println("Array generated with one size parameter: L: " + this.size + "  C:" + this.content[0]+"\n");
     }
 
-    public ListArray(){
-        this.length = -1;
-//        System.out.println("Contentless ListArray generated... Why?"+"\n");
+    public MyArrayList(){
+        this.size = -1;
+//        System.out.println("Contentless MyArrayList generated... Why?"+"\n");
     }
 
-    public ListArray(int[] contents){
+    public MyArrayList(int[] contents){
 
         if(contents.length==0){
-            this.length = -1;
-//            System.out.println("Contentless ListArray generated... Why?"+"\n");
+            this.size = -1;
+//            System.out.println("Contentless MyArrayList generated... Why?"+"\n");
             return;
         }
-        this.length = contents.length;
+        this.size = contents.length;
         this.content = contents;
-//        System.out.println("Array generated with one contents parameter: L: " + this.length + "  C:" + this.content[0]+"\n");
+//        System.out.println("Array generated with one contents parameter: L: " + this.size + "  C:" + this.content[0]+"\n");
     }
 
     public int size(){
-        return this.length;
+        return this.size;
     }
 
     public int get(int index){
@@ -48,7 +48,7 @@ public class ListArray {
     }
 
     public int indexOf(int index){
-        if(index>this.length-1){
+        if(index>this.size -1){
             return -1;
         }
         for(int i = 0; i<this.content.length; i++){
@@ -60,13 +60,13 @@ public class ListArray {
     }
 
     public void add(int val){
-        if(this.length == -1)
+        if(this.size == -1)
         {
             int[] array = {val};
             this.content = array;
-            this.length = 1;
+            this.size = 1;
         }
-        int[] newArray = new int[this.length+1];
+        int[] newArray = new int[this.size +1];
 
         int index = 0;
         while(index<this.content.length){
@@ -75,19 +75,19 @@ public class ListArray {
         }
         newArray[index] = val;
         this.content = newArray;
-        this.length++;
+        this.size++;
     }
 
     public void add(int val, int index){
-        if(index > this.length){
+        if(index > this.size){
             System.out.println("Chosen index is out of bounds!");
             return;
         }
-        if(index == this.length){
+        if(index == this.size){
             this.add(val);
         }
 
-        int[] newArray = new int[this.length+1];
+        int[] newArray = new int[this.size +1];
 
         int newIndex = 0;
 
@@ -101,7 +101,7 @@ public class ListArray {
             System.out.println(newArray[newIndex]);
             newIndex++;
         }
-        this.length++;
+        this.size++;
         this.content = newArray;
     }
 
@@ -111,7 +111,7 @@ public class ListArray {
             System.out.println("Nothing to remove you idiot");
             return;
         }
-        int[] newArray = new int[this.length-1];
+        int[] newArray = new int[this.size -1];
         int newIndex = 0;
 
         for(int i = 0; i < this.content.length; i++){
@@ -141,7 +141,7 @@ public class ListArray {
         int removalIndex = index;
         int returnValue = -1;
         int newIndex = 0;
-        int[] newArray = new int[this.length-1];
+        int[] newArray = new int[this.size -1];
 
         for(int i = 0; i< this.content.length; i++){
             newArray[newIndex] = this.content[i];
